@@ -4,7 +4,7 @@ library(stringr)
 options(scipen=100)
 
 #Input the fasta file that has sequences of all proteins
-fasta=read.delim2(paste(getwd(),"/orf_trans.fasta.R",sep=""), header=FALSE)
+fasta=read.delim2(paste(getwd(),"/orf_trans.fasta",sep=""), header=FALSE)
 fasta=apply(fasta,2,as.character)
 
 warning_geneID=NULL
