@@ -151,5 +151,5 @@ for(i in nucleus_headers)
     warning_geneID=c(warning_geneID,geneID)
   }
 }
-write.table(bedgraph,"cerevisiae_proteome.bedgraph",col.names=F, row.names=F, quote=F)
-write.table(warning_geneID,"warning.txt",col.names=F, row.names=F, quote=F)
+write.table(bedgraph,"cerevisiae_proteome.bedgraph",col.names=F, row.names=F, quote=F, sep="\t")
+write.table(warning_geneID,"warning.txt",col.names=F, row.names=F, quote=F, sep="\t")
